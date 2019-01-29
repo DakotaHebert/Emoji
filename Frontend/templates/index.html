@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emoji Classification</title>
+</head>
+<body>
+    <form action="/send" method = "POST" enctype = "multipart/form-data" accept="image/jpg, image/jpeg">
+      Your image: <input type="file" name="pic" id="pic"><br>
+        <select id="weight" name="weight">
+            <option default>color</option>
+            <option>gray</option>
+            <option>thresh</option>
+        </select>
+      <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .image-upload > input {
+            display: none;
+        }
+        body {
+            background-color: #8e44ad !important;/* fallback for old browsers */
+            background: -webkit-linear-gradient(right,#8e44ad,#9b59b6) !important;
+            background: -o-linear-gradient(right,#8e44ad,#9b59b6) !important;
+            background: linear-gradient(to left, #8e44ad, #9b59b6) !important;
+            -webkit-font-smoothing: antialiased !important;
+            -moz-osx-font-smoothing: grayscale !important;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        hr {
+            margin-bottom: 1.4rem;
+        }
+        /*-------------BOX STYLING----------------*/
+        .box {
+            background: white;
+            padding: 30px 45px 45px 45px;
+            text-align: center;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+            width: 380px;
+            align-items: center;
+            flex-direction: column;
+            display: flex;
+            margin-top: 12vh;
+            max-height: 78vh;
+            max-width: 90vw;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+        .content {
+            width: 100%;
+        }
+        .header {
+            width: 100%;
+            margin-bottom: 0 !important;
+        }
+        /* Generate Room Button */
+        .box button {
+            font-family: var(--body-font-family), sans-serif;
+            text-transform: uppercase;
+            background: #8D44AD;
+            width: 100%;
+            border: 0;
+            padding: 15px;
+            color: #FFFFFF;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .image-upload {
+            text-transform: uppercase;
+            background: #8D44AD;
+            border: 0;
+            padding: 15px;
+            color: #FFFFFF;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .image-upload:hover {
+            background: #AB69C8;
+        }
+
+        .divider {
+            font-family: var(--body-font-family), sans-serif !important;
+            text-transform: lowercase !important;
+            font-weight: normal !important;
+            font-size: 1.1rem !important;
+        }
+        #prediction {
+            font-size: 6em;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h3>Prediction</h3>
+        <div class='header'>
+            <hr/>
+        </div>
+        <div class="content">
+            <span id="prediction"> {{prediction}}</span>
+        </div>
+    </div>
+</body>
+</html>
